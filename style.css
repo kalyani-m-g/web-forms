@@ -1,0 +1,79 @@
+/* Your page-wide vibe */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('images/bg.jpg') center/cover no-repeat;
+  background-color: #f9f3f7; /* pastel fallback */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Form container overlay */
+form {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 380px;
+  width: 90%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #444;
+}
+
+/* Inputs & select fields */
+label {
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin: 0.6em 0 0.2em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 0.6em;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+  border-color: #b38feb;
+  outline: none;
+}
+
+/* Submit button flair */
+button {
+  margin-top: 1.2em;
+  width: 100%;
+  padding: 0.75em;
+  border: none;
+  border-radius: 6px;
+  background-color: #ffc8dd;
+  color: #333;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #ffabbd;
+}
+
+/* HTML5 validation styles */
+input:invalid {
+  border-color: #ff6b6b;
+}
